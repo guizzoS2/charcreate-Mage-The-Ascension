@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+@font-face {
+    font-family: Darkness;
+    src: url(../img/fonts/cw_oldwd.ttf)
+}
+
+@font-face {
+    font-family: Akira;
+    src: url(../img/fonts/AKIRA___.ttf)
+}
+
+@font-face {
+    font-family: Bergel;
+    src: url(../img/fonts/BERGELL.TTF)
+}
+
+:root {
+    --cor-primaria: #1B1A17;
+    --cor-secundaria: #B4B4B3;
+    --cor-terciaria: white;
+    --cor-hover: #272727;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+    --fonte-terciaria: Darkness;
+    --fonte-quarternaria: Bergel;
+    --fonte-quinternaria: Akira;
+}
+
+p a {
+    color: purple;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.content_row {
+    display: flex;
+    flex-direction: row;
+    border: blue;
+}
+
+.content_column {
+    display: flex;
+    flex-direction: column;
+    border: green;
+}
+
+/* tradition collapsible start */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 25vw;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.collapsible_base {
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    width: 25vw;
+    box-sizing: border-box;
+}
+
+.active {
+    display: block;
+}
+
+/* general tradition */
+.tradition_top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border: green;
+}
+
+.tradition_bottom p{
+    text-align: center;
+}
+
+.tradition_bottom {
+    border: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    max-height: 90%;
+}
+
+/* tradition tolltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 125px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: fixed;
+z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* essence general */
+.essence_top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border: green;
+}
+
+.marked {
+    background-color: #a19c9c;
+}
+
+.essence_top p{
+    text-align: center;
+}
+
+.essence_bottom {
+    border: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    border: purple ;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.essence_name {
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.essence_name h2 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.essence_description {
+    display: none;
+    padding: 10px;
+    width: 50%;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+
+/* aquétipo */
+.arquetipo_top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border: green;
+}
+
+.arquetipo_top p{
+    text-align: center;
+}
+.arquetipo_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+    width: 340px;
+}
+
+.nav_center {
+    width: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;;
+    text-align: center;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    border: 2px solid #686565;
+
+}
+
+.searchbar {
+    border: brown;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.searchbar input {
+    width: 340px;
+    height: 35px;
+    color: #000000;
+    border: solid #a5a6a9;;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.collapsible {
+    width: 90%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.collapsible h2 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.content_area {
+    border: purple ;
+    padding: 10px;
+    width: 20%;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+/* habilidade */
+.habilidade_top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border: green;
+}
+
+.habilidade_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.attribute-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+}
+
+.attribute {
+    display: flex;
+    justify-content: end;
+
+}
+
+
+
+/* vantagens */
+.vantagem_top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border: green;
+}
+
+.vantagem_bottom {
+    display: flex; 
+   
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.vantagem_list {
+    width: 1200px;
+    border: red;
+}
+

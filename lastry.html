@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CharCreate</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h2>Parte 1: Tadição</h2>
+    <div class="tradition_top">
+        <h1>Escolha sua Tradição</h1>
+        <select class="" name="Tradition" id="tradition">
+            <option value="0" selected>None</option>
+            <option value="1">Akashic Brotherhood</option>
+            <option value="2">Celestial Chorus</option>
+            <option value="3">Cult of Ecstasy</option>
+            <option value="4">Dreamspeakers</option>
+            <option value="5">Euthanatoi</option>
+            <option value="6">Order of Hermes</option>
+            <option value="7">Sons of Ether</option>
+            <option value="8">Verbenae</option>
+            <option value="9">Virtual Adepts</option>
+        </select>
+        <p style="width: 900px; margin-bottom: 10px;">A Tradition is a group of mystically-oriented mages allied with the Council of Nine. They believe in magic and understand that they manipulate magic to create desired effects. They contrasts with scientifically-oriented mages, who believe that they use Enlightened Science rather than magic, and this Science is manipulated to create desired effects.</p>
+    </div>
+    <div class="tradition_bottom">
+        <div class="content_column">
+           <!-- 1 -->
+            <div>
+                <div class="card">
+                    <button class="collapsible_base">  The Akashic Brotherhood 
+                        <div class="tooltip">
+                            &#9432;
+                            <span class="tooltiptext">
+                                Bonus: Mind +1 <br>                                                   
+                            </span>
+                        </div>
+                    </button>
+                    
+                    <div class="content">
+                        <p>
+                            The Akashic Brotherhood or just the Akashayana, is a Tradition of mages masters of mind, body, and spirit pursuing the arts of personal discipline.  <a href="https://whitewolf.fandom.com/wiki/Akashic_Brotherhood"> Know More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div>
+                <div class="card">
+                    <button class="collapsible_base"> Celestial Chorus
+                        <div class="tooltip">
+                            &#9432;
+                            <span class="tooltiptext">
+                                Bonus: Prime +1 <br>                                                   
+                            </span>
+                        </div>
+                    </button>
+                    <div class="content">
+                        <p>The Celestial Chorus is a Tradition of mages united by their efforts to touch the Divine as well as their belief in the One and Prime from which all originate. <br><a href="https://whitewolf.fandom.com/wiki/Celestial_Chorus"> Know More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div>
+                <div class="card">
+                    <button class="collapsible_base">The Cult of Ecstasy
+                        <div class="tooltip">
+                            &#9432;
+                            <span class="tooltiptext">
+                                Bonus: Time +1 <br>                                                   
+                            </span>
+                    </button>
+                    <div class="content">
+                        <p>The Cult of Ecstasy is a Tradition of mages who uses things like drugs, music and sex, to achieve a mental state that transcends the physical world. <a href="https://whitewolf.fandom.com/wiki/Cult_of_Ecstasy">Know More</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_column">
+            <!-- 4 -->
+            <div>
+                <div class="card">
+                    <button class="collapsible_base">Dreamspeakers
+                        <div class="tooltip">
+                            &#9432;
+                            <span class="tooltiptext">
+                                Bonus: Spirit +1 <br>                                                   
+                            </span>
+                    </button>
+                    <div class="content">
+                        <p>The Dreamspeakers or Kha'vadi, are a Tradition of mages who practice shamanism, communing with spirits and existing as keepers between worlds. <a href="https://whitewolf.fandom.com/wiki/Dreamspeakers_(MTAs)">Know More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div>
+                <div class="card">
+                    <button class="collapsible_base">Euthanatoi
+                        <div class="tooltip">
+                            &#9432;
+                            <span class="tooltiptext">
+                                Bonus: Entropy +1 <br>                                                   
+                            </span>
+                    </button>
+                    <div class="content">
+                        <p>The Euthanatoi or Chakravanti, are a Tradition of mages who represent a collection of thanatotic cultists, necromancers, assassins, scholars, gamblers and healers. <a href="https://whitewolf.fandom.com/wiki/Euthanatoi">Know More</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div>
+                <div class="card">
+                    <button class="collapsible_base">Order of Hermes
+                        <div class="tooltip">
+                            &#9432;
+                            <span class="tooltiptext">
+                                Bonus: Forcers +1 <br>                                                   
+                            </span>
+                    </button>
+                    <div class="content">
+                        <p>The Order of Hermes, is a Tradition of mages that draws upon a potent fundus of magical knowledge and has shaped occult history to great deals. <a href="https://whitewolf.fandom.com/wiki/Order_of_Hermes">Know More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content_column">
+            <!-- 7 -->
+            <div>
+                <div class="card">
+                    <button class="collapsible_base">The Sons of Ether
+                        <div class="tooltip">
+                            &#9432;
+                            <span class="tooltiptext">
+                                Bonus: Matter +1 <br>                                                   
+                            </span>
+                    </button>
+                    <div class="content">
+                        <p>The Sons of Ether are a group of technomancers who were part of the Order of Reason and Technocracy, which they abandoned after the Union aided the expulsion of the Ether from the Consensus. <a href="https://whitewolf.fandom.com/wiki/Sons_of_Ether">Know More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div>
+                <div class="card">
+                    <button class="collapsible_base">Verbenae
+                        <div class="tooltip">
+                            &#9432;
+                            <span class="tooltiptext">
+                                Bonus: Life +1 <br>                                                   
+                            </span>
+                    </button>
+                    <div class="content">
+                        <p>The Verbena is a Tradition of mages who are dedicated to preserving the ancient crafts and wisdom passed down over the ages by witches, druids, shamans of the Old Gods. <a href="https://whitewolf.fandom.com/wiki/Verbena">Know More</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div>
+                <div class="card">
+                    <button class="collapsible_base">The Virtual Adepts
+                        <div class="tooltip">
+                            &#9432;
+                            <span class="tooltiptext">
+                                Bonus: Correspondence +1 <br>                                                   
+                            </span>
+                    </button>
+                    <div class="content">
+                        <p>The Virtual Adepts are the youngest members of the Traditions. The Adepts search for a way to reach the singularity, a point where mankind can transcend into something post-human. <a href="https://whitewolf.fandom.com/wiki/Virtual_Adepts">Know More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Parte 2: Essência</h2>
+    <div class="essence_top">
+        <h1>Escolha sua Essência</h1>
+        <select class="" name="Essence" id="essence">
+            <option value="0" selected>None</option>
+            <option value="1">Dynamic</option>
+            <option value="2">Primordial</option>
+            <option value="3">Pattern</option>
+            <option value="4">Questing</option>
+
+        </select>
+        <p style="width: 900px; margin-bottom: 10px;">The Avatar is the portion of an individual's soul which is the source of an Awakened mage's ability to perform magic, and which grants the possibility of Ascension. Each Avatar has an Essence. These describe the Avatar's nature, as well as the way in which the Avatar seeks Ascension. An Avatar's Essence usually, though not always, complements the mage's own desires and outlook on magic and life. </p>
+    </div>
+    <div class="essence_bottom">
+      
+        <div class="content_row" style="width: 80%;">
+            <!-- 1 -->
+            <button class="essence_name marked" id="name1"><h2>Dynamic</h2></button>
+    
+            <!-- 2 -->
+            <button class="essence_name" id="name2"><h2>Pattern</h2></button>
+    
+            <!-- 3 -->
+            <button class="essence_name" id="name3"><h2>Primordial</h2></button>
+
+            <!-- 4 -->
+            <button class="essence_name" id="name4"><h2>Questing</h2></button>
+        </div>
+    
+        <div class="info">
+            <!-- 1 -->
+            <div class="essence_description show" id="description1">
+                <!-- <h2>Dynamic</h2> -->
+                <p> A mage with a Dynamic Avatar would say that nothing is static, everything must change.Such mages are aligned with the cosmic principle of Dynamism, and feel a deep urge to create, innovate, and pursue novelty. Mages who have succumbed to the most extreme and imbalanced form of Dynamism are known as Marauders. </p>
+            </div>
+    
+            <!-- 2 -->
+            <div class="essence_description" id="description2">
+                <!-- <h2>Pattern</h2> -->
+                <p>A mage with a Pattern Avatar would say that strength comes from order and stability. Such mages are aligned with the cosmic principle of Stasis, and feel a deep urge to protect and preserve what they perceive as valuable. The mages who have succumbed to the most extreme and imbalanced form of Stasis are the technocrats known as Threat Null. </p>
+            </div>
+
+            <!-- 3 -->
+            <div class="essence_description" id="description3">
+                <!-- <h2>Primordial</h2> -->
+                <p>A mage with a Primordial Avatar subconsciously remembers the most primordial of times: the supreme tranquility of the time before Creation began.  The ugliest parts of existence fill the Primordial mage with the urge to purge away that ugliness and restore a small measure of the primordial tranquility to current human existence. Such mages are aligned with the cosmic principle of Entropy, and feel a deep urge to purify existence by purging away the ugliest parts. Mages who have succumbed to the most extreme and imbalanced form of Entropy are known as Nephandi. </p>
+            </div>
+
+            <!-- 4 -->
+            <div class="essence_description" id="description4">
+                <!-- <h2>Questing</h2> -->
+                <p>A mage with a Questing Avatar would say that purpose comes from the seeking and accomplishing of goals. Whereas the other three Essences are manifestations of fundamental cosmic principles, a Questing mage feels a deep urge to pursue the central concept itself which gives the three cosmic principles their direction: Quality. A Questing mage perpetually perceives a state of higher quality, and is ever questing toward it. Questing mages are the glue who seek to harmonize and balance the other mages and forces. </p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>Parte 3: Arquétipo</h2>
+    <div class="arquetipo_top">
+        <h1>Escolha seu Arquétipo</h1>
+        <select class="" name="arquetipo" id="arquetipo">
+            <option value="0" selected>None</option>
+            <option value="1">Arquiteto</option>
+            <option value="2">Autocrata</option>
+            <option value="3">Bon Vivant</option>
+            <option value="4">Valentão</option>
+            <option value="5">Samaritano</option>
+            <option value="6">Celebrante</option>
+            <option value="7">Criança</option>
+            <option value="8">Competidor</option>
+            <option value="9">Conformista</option>
+            <option value="10">Esperto</option>
+            <option value="11">Ranzinza</option>
+            <option value="12">Excêntrico</option>
+            <option value="13">Diretor</option>
+            <option value="14">Fanático</option>
+            <option value="15">Galante</option>
+            <option value="16">Juiz</option>
+            <option value="17">Solitário</option>
+            <option value="18">Mártir</option>
+            <option value="19">Masoquista</option>
+            <option value="20">Monstro</option>
+            <option value="21">Pedagogo</option>
+            <option value="22">Penitente</option>
+            <option value="23">Perfeccionista</option>
+            <option value="24">Rebelde</option>
+            <option value="25">Trapaceiro</option>
+            <option value="26">Sobrevivente</option>
+            <option value="27">Caçador de Emoções</option>
+            <option value="28">Tradicionalista</option>
+            <option value="29">Comediante</option>
+            <option value="30">Visionário</option>
+        </select>
+        
+        <p></p>
+    </div>
+    <div class="arquetipo_bottom" style="height: 600px;">
+        <div class="nav_center">
+            <div class="searchbar">
+                <input type="text" id="searchInput" onkeyup="filterCards()" placeholder="Search for names..">
+            </div>
+
+            <div class="content_collumn">
+                <!-- 1 -->
+                <button class="collapsible card" id="card1"><h2>Arquiteto</h2></button>
+        
+                <!-- 2 -->
+                <button class="collapsible card" id="card2"><h2>Autocrata</h2></button>
+        
+                <!-- 3 -->
+                <button class="collapsible card" id="card3"><h2>Bon Vivant</h2></button>
+
+                <!-- 4 -->
+                <button class="collapsible card" id="card4"><h2>Valentão</h2></button>
+
+                <!-- 5 -->
+                <button class="collapsible card" id="card5"><h2>Samaritano</h2></button>
+
+                <!-- 6 -->
+                <button class="collapsible card" id="card6"><h2>Celebrante</h2></button>
+
+                <!-- 7 -->
+                <button class="collapsible card" id="card7"><h2>Criança</h2></button>
+
+                <!-- 8 -->
+                <button class="collapsible card" id="card8"><h2>Competidor</h2></button>
+
+                <!-- 9 -->
+                <button class="collapsible card" id="card9"><h2>Conformista</h2></button>
+
+                <!-- 10 -->
+                <button class="collapsible card" id="card10"><h2>Esperto</h2></button>
+
+                <!-- 11 -->
+                <button class="collapsible card" id="card11"><h2>Ranzinza</h2></button>
+
+                <!-- 12 -->
+                <button class="collapsible card" id="card12"><h2>Excêntrico</h2></button>
+
+                <!-- 13 -->
+                <button class="collapsible card" id="card13"><h2>Diretor</h2></button>
+
+                <!-- 14 -->
+                <button class="collapsible card" id="card14"><h2>Fanático</h2></button>
+
+                <!-- 15 -->
+                <button class="collapsible card" id="card15"><h2>Galante</h2></button>
+
+                <!-- 16 -->
+                <button class="collapsible card" id="card16"><h2>Juiz</h2></button>
+
+                <!-- 17 -->
+                <button class="collapsible card" id="card17"><h2>Solitário</h2></button>
+
+                <!-- 18 -->
+                <button class="collapsible card" id="card18"><h2>Mártir</h2></button>
+
+                <!-- 19 -->
+                <button class="collapsible card" id="card19"><h2>Masoquista</h2></button>
+
+                <!-- 20 -->
+                <button class="collapsible card" id="card20"><h2>Monstro</h2></button>
+
+                <!-- 21 -->
+                <button class="collapsible card" id="card21"><h2>Pedagogo</h2></button>
+
+                <!-- 22 -->
+                <button class="collapsible card" id="card22"><h2>Penitente</h2></button>
+
+                <!-- 23 -->
+                <button class="collapsible card" id="card23"><h2>Perfeccionista</h2></button>
+
+                <!-- 24 -->
+                <button class="collapsible card" id="card24"><h2>Rebelde</h2></button>
+
+                <!-- 25 -->
+                <button class="collapsible card" id="card25"><h2>Trapaceiro</h2></button>
+
+                <!-- 26 -->
+                <button class="collapsible card" id="card26"><h2>Sobrevivente</h2></button>
+
+                <!-- 27 -->
+                <button class="collapsible card" id="card27"><h2>Caçador de Emoções</h2></button>
+
+                <!-- 28 -->
+                <button class="collapsible card" id="card28"><h2>Tradicionalista</h2></button>
+
+                <!-- 29 -->
+                <button class="collapsible card" id="card29"><h2>Comediante</h2></button>
+
+                <!-- 30 -->
+                <button class="collapsible card" id="card30"><h2>Visionário</h2></button>
+            </div>
+        </div>
+      
+        <div class="content_area">
+            <!-- 1 -->
+            <div class="content show" id="content1">
+                <h2>Arquiteto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+      
+            <!-- 2 -->
+            <div class="content" id="content2">
+                <h2>Autocrata</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 3 -->
+            <div class="content" id="content3">
+                <h2>Bon Vivant</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 4 -->
+            <div class="content" id="content4">
+                <h2>Valentão</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 5 -->
+            <div class="content" id="content5">
+                <h2>Samaritano</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 6 -->
+            <div class="content" id="content6">
+                <h2>Celebrante</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 7 -->
+            <div class="content" id="content7">
+                <h2>Criança</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 8 -->
+            <div class="content" id="content8">
+                <h2>Competidor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 9 -->
+            <div class="content" id="content9">
+                <h2>Conformista</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 10 -->
+            <div class="content" id="content10">
+                <h2>Esperto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 11 -->
+            <div class="content" id="content11">
+                <h2>Ranzinza</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 12 -->
+            <div class="content" id="content12">
+                <h2>Excêntrico</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 13 -->
+            <div class="content" id="content13">
+                <h2>Diretor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 14 -->
+            <div class="content" id="content14">
+                <h2>Fanático</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 15 -->
+            <div class="content" id="content15">
+                <h2>Galante</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 16 -->
+            <div class="content" id="content16">
+                <h2>Juiz</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 17 -->
+            <div class="content" id="content17">
+                <h2>Solitário</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 18 -->
+            <div class="content" id="content18">
+                <h2>Mártir</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 19 -->
+            <div class="content" id="content19">
+                <h2>Masoquista</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 20 -->
+            <div class="content" id="content20">
+                <h2>Monstro</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 21 -->
+            <div class="content" id="content21">
+                <h2>Pedagogo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 22 -->
+            <div class="content" id="content22">
+                <h2>Penitente</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 23 -->
+            <div class="content" id="content23">
+                <h2>Perfeccionista</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 24 -->
+            <div class="content" id="content24">
+                <h2>Rebelde</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 25 -->
+            <div class="content" id="content25">
+                <h2>Trapaceiro</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 26 -->
+            <div class="content" id="content26">
+                <h2>Sobrevivente</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 27 -->
+            <div class="content" id="content27">
+                <h2>Caçador de Emoções</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 28 -->
+            <div class="content" id="content28">
+                <h2>Tradicionalista</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 29 -->
+            <div class="content" id="content29">
+                <h2>Comediante</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+            <!-- 30 -->
+            <div class="content" id="content30">
+                <h2>Visionário</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum eos deserunt sed est, ea incidunt quam reprehenderit alias deleniti odit officia unde rerum, porro voluptates voluptatem, excepturi consectetur harum?</p>
+            </div>
+
+        </div>
+    </div>
+
+    <h2>Parte 4: Habilidades</h2>
+    <div class="habilidade_top">
+        <h2>Escolha suas Habilidades</h2>
+        <p>As habilidades de seu personagem marcam como seu personagem é em certor pontos, sejam eles força, velocidade, atração, resistência, e outros <br>
+        Você tem 3 áreas para dividir seus pontos, Físicos, Mentais e Sociais, você pode dividir entre elas 7/5/3. <br> Nenhuma habilidade pode ser maior que 4 e menor que 1.</p>
+    </div>
+    <div class="habilidade_bottom">
+        <div class="attribute-container">
+        <h2>Físicos             
+            <select class="" name="fisicos" id="fisicos" onchange="updatePoints('Fis', this.value)">
+                <option value="0" selected></option>
+                <option value="7">7</option>
+                <option value="5">5</option>
+                <option value="3">3</option>
+            </select>
+        </h2>
+
+        <p>Pontos Disponíveis: <span id="pointsFis">27</span></p>
+        <div class="attribute">
+            <span>Força:</span>
+            <button onclick="decrement('Fis', 'forca')">-</button>
+            <span id="forca">1</span>
+            <button onclick="increment('Fis', 'forca')">+</button>
+        </div>
+        <div class="attribute">
+            <span>Destreza:</span>
+            <button onclick="decrement('Fis', 'destreza')">-</button>
+            <span id="destreza">1</span>
+            <button onclick="increment('Fis', 'destreza')">+</button>
+        </div>
+        <div class="attribute">
+            <span>Vigor:</span>
+            <button onclick="decrement('Fis', 'vigor')">-</button>
+            <span id="vigor">1</span>
+            <button onclick="increment('Fis', 'vigor')">+</button>
+        </div>
+    </div>
+
+    <div class="attribute-container">
+        <h2>Sociais
+            <select class="" name="sociais" id="sociais" onchange="updatePoints('Soc', this.value)">
+                <option value="0" selected></option>
+                <option value="7">7</option>
+                <option value="5">5</option>
+                <option value="3">3</option>
+            </select>
+        </h2>
+        <p>Pontos Disponíveis: <span id="pointsSoc">27</span></p>
+        <div class="attribute">
+            <span>Carisma:</span>
+            <button onclick="decrement('Soc', 'carisma')">-</button>
+            <span id="carisma">1</span>
+            <button onclick="increment('Soc', 'carisma')">+</button>
+        </div>
+        <div class="attribute">
+            <span>Manipulação:</span>
+            <button onclick="decrement('Soc', 'manipulacao')">-</button>
+            <span id="manipulacao">1</span>
+            <button onclick="increment('Soc', 'manipulacao')">+</button>
+        </div>
+        <div class="attribute">
+            <span>Aparência:</span>
+            <button onclick="decrement('Soc', 'aparencia')">-</button>
+            <span id="aparencia">1</span>
+            <button onclick="increment('Soc', 'aparencia')">+</button>
+        </div>
+    </div>
+
+    <div class="attribute-container">
+        <h2>Mentais
+            <select class="" name="mentais" id="mentais" onchange="updatePoints('Men', this.value)">
+                <option value="0" selected></option>
+                <option value="7">7</option>
+                <option value="5">5</option>
+                <option value="3">3</option>
+            </select>
+        </h2>
+        <p>Pontos Disponíveis: <span id="pointsMen">27</span></p>
+        <div class="attribute">
+            <span>Percepção:</span>
+            <button onclick="decrement('Men', 'percepcao')">-</button>
+            <span id="percepcao">1</span>
+            <button onclick="increment('Men', 'percepcao')">+</button>
+        </div>
+        <div class="attribute">
+            <span>Inteligência:</span>
+            <button onclick="decrement('Men', 'inteligencia')">-</button>
+            <span id="inteligencia">1</span>
+            <button onclick="increment('Men', 'inteligencia')">+</button>
+        </div>
+        <div class="attribute">
+            <span>Raciocínio:</span>
+            <button onclick="decrement('Men', 'raciocinio')">-</button>
+            <span id="raciocinio">1</span>
+            <button onclick="increment('Men', 'raciocinio')">+</button>
+        </div>
+    </div>
+    </div>
+
+    <h2>Parte 5: Vantagens</h2>
+    <div class="vantagem_top">
+        <h2>Escolha suas Vantagens</h2>
+        <p>Cada personagem tem 7 pontos para colocar entre seus 11 Antecedentes, cada Antecedente começa em 0 e tem um máximo de 5.</p>
+    </div>
+
+    <div class="vantagem_bottom">
+        <div class="vantagem_list">
+            <p>Pontos Disponíveis: <span id="pointsVants">7</span></p>
+            <ul>
+                <li>
+                    <span>Aliados:</span>
+                    <button onclick="decrement('Vants', 'aliados')">-</button>
+                    <span id="aliados">0</span>
+                    <button onclick="increment('Vantas', 'aliados')">+</button>
+                </li>
+                    <ul>
+                        <li>Aliados são pessoas (ou criaturas) que estão dispostas a ajudar seu personagem. Cada ponto, adiciona um aliado, ou aumenta a utilidade de um aliado. Geralmente aliados são Adormecidos, que tem uma noção do sobrenatural, mas não tem grande conhecimento do mundo mágico. Eles dão acesso a informação, recursos, lugares, mas possuem personalidades prórprias e objetivos.</li>
+                    </ul>
+                <li>
+                    <span>Arcanum:</span>
+                    <button onclick="decrement('Vants', 'arcanum')">-</button>
+                    <span id="arcanum">0</span>
+                    <button onclick="increment('Vantas', 'arcanum')">+</button>
+                </li>
+                    <ul>
+                        <li>O Arcanum é como um manto mágico que os magos possuem naturalmente, os magos caminham nas fronteiras daquilo que as pessoas normais consideram realidade, devido a natureza dos magos, as vezes eles escapam da percepção dos Adormecidos. Além disso, os seus registros desaparecem, eles se tornam indescritiveis, suas feições fogem da memória alheia. Este Antecedente só funciona quando o mago está Ausente ou escondido; caso o personagem esteja atancando alguém, ou gritando, ela não funcionará. <i>Você soma seu valor de Arcanum a suas Paradas de Dados de Furtividade, e seus inimigos os reduzem em suas Paradas de Dados de Investigação e Percepção.</i></li>
+                    </ul>
+                <li>
+                    <span>Avatar:</span>
+                    <button onclick="decrement('Vants', 'avatar')">-</button>
+                    <span id="avatar">0</span>
+                    <button onclick="increment('Vantas', 'avatar')">+</button>
+                </li>
+                    <ul>
+                        <li>É por meio do Avatar Desperto, que o mago altera a realidade. A força do seu Avatar afeta diretamente seu nível de Quintessência. Ela também determina quanta Quintessência seu personagem pode reabsorver a qualquer momento. Sempre que seu valor de Quintessência é menor que seu valor de Avatar, ele pode Meditar próximo a um Nodo durante pelo menos uma hora. <i>Será usado uma Parada de Dados baseada em Meditação (Percepção + Meditação; dificuldade 7) por hora no Nodo. Recuperando Quintessência igual aos seus Sucessos, com o maximo igual a seu Avatar.</i> O nível de Avatar limita os pontos de Quintessência que um mago pode canalizar em um Efeito.</li>
+                    </ul>
+                <li>
+                    <span>Biblioteca:</span>
+                    <button onclick="decrement('Vants', 'biblioteca')">-</button>
+                    <span id="biblioteca">0</span>
+                    <button onclick="increment('Vantas', 'biblioteca')">+</button>
+                </li>
+                    <ul>
+                        <li>Essa característica representa o acesso a informações variadas. Essa "biblioteca" pode ter formas variadas, desde pergaminhos até bancos de dados, ou amigos. Seu personagem pode acessar esses dados sempre que precisar. Essas bibliotecas podem obter conhecimentos mísitcos e mundanos, só precisam seguir uma natureza específica. <i>Pode fazer um teste de Atributo Mental + Biblioteca, para pesquisar um tópico arcano ou obscuro.</i> </li>
+                    </ul>
+                <li>
+                    <span>Contatos:</span>
+                    <button onclick="decrement('Vants', 'contatos')">-</button>
+                    <span id="contatos">0</span>
+                    <button onclick="increment('Vantas', 'contatos')">+</button>
+                </li>
+                    <ul>
+                        <li>Para um mago com contatos, o boato está sempre em seus ouvidos. Eles são menos confiáveis que seus Aliados, mas são bem informados, e mesmo aquilo que eles não sabem, eles -geralmente- podem descobrir. Contatos são conhecidos Casuais. <i>Ao utilizar Contatos, faça um teste de um Atributo Social + Antecedente (a dificuldade depende da informação desejada).</i> Quanto mais pontos, mais contatos.</li>
+                    </ul>
+                <li>
+                    <span>Destino:</span>
+                    <button onclick="decrement('Vants', 'destino')">-</button>
+                    <span id="destino">0</span>
+                    <button onclick="increment('Vantas', 'destino')">+</button>
+                </li>
+                <ul>
+                    <li>Alguns magos resistem heróicamente, empurando as malhas da Trama a sua volta enquanto investem cegamente em direção a um destino inegável. Uma profecia, uma visão ou apenas um "sentimento de grandeza" o perseguem. Seus companheiros sentem esse destino, assim como ele. Mesmo que ninguém entenda a natureza dessa predestinação, você deve desenvolvê-la nos bastidores. <i>Uma vez por história, caso seu personagem encare um fim terrível, que vai contra seu Destino, você deve testar seu nível de Destino contra uma dificuldade 8. Cada sucesso permite a recuperação de uma Força de Vontade gasto.</i></li>
+                </ul>
+                <li>
+                    <span>Influência:</span>
+                    <button onclick="decrement('Vants', 'influencia')">-</button>
+                    <span id="influencia">0</span>
+                    <button onclick="increment('Vantas', 'influencia')">+</button>
+                </li>
+                <ul>
+                    <li>Como visionários e líderes, os magos frequentemente tem alguma influência sobre o destino do mundo Adormecido. Talvez seu personagem seja proprietário de uma grande corporação, um político bem sucedido, cznte numa banda popular, ou tenha muitos seguidores no instagram. A influência apenas permite que seu personagem consiga executar algumas tarefas, não lhe fornece capangas. <i>Com um teste de Carisma + Influência, pode-se determinar sua capacidade de levar as pessoas a segui-lo.</i></li>
+                </ul>
+                <li>
+                    <span>Nodo:</span>
+                    <button onclick="decrement('Vants', 'nodo')">-</button>
+                    <span id="nodo">0</span>
+                    <button onclick="increment('Vantas', 'nodo')">+</button>
+                </li>
+                <ul>
+                    <li>Um personagem que possua um Nodo tem acesso a um lugar de poder onde consegue recarregar sua Quintessência e reunir Sorvos. Podendo estar localizado em qualquer lugar, mas sempre um lugar protegido. Esse nível determina quanto Sorvo é produzido no local e quanta Quintessência "livre" pode ser absorvida semanalmente pelos personagens, esse valor depende de narrador para narrador.</li>
+                </ul>
+                <li>
+                    <span>Recursos:</span>
+                    <button onclick="decrement('Vants', 'recursos')">-</button>
+                    <span id="recursos">0</span>
+                    <button onclick="increment('Vantas', 'recursos')">+</button>
+                </li>
+                <ul>
+                    <li>Até os Magos precisam comer, essa característica representa os bens financeiros e a renda com que seu mago começa na criação de personagem. Ela descreve seu padrão de vida e ajuda a definir que tipo de prioridades ele possui.</li>
+                        <ul>
+                            <li>Nivel 1: Pequenas economias, apartamento minúsculo, veículo barato; renda mensal de US$500</li>
+                            <li>Nível 2: Apartamento ou condomínio de classe média, veículo popular; renda mensal de US$1.200</li>
+                            <li>Nível 3: Economias amplas, casa pequena, veículo classe média; renda mensal de US$3.000</li>
+                            <li>Nível 4: Bem estabelecido, casa ampla, veículo de luxo; renda mensal de US$9.000</li>
+                            <li>Nível 5: Rico, mansão, limusine, renda mensal de US$30.000</li>
+                        </ul>
+                </ul>
+                <li>
+                    <span>Sonhos:</span>
+                    <button onclick="decrement('Vants', 'sonhos')">-</button>
+                    <span id="sonhos">0</span>
+                    <button onclick="increment('Vantas', 'sonhos')">+</button>
+                </li>
+                <ul>
+                    <li>Com o antecedente Sonhos, um personagem tem a cpaacidade de meditar se fundir ao fluxo de informação carregado pela mentalidade universal. Se concentrando em um problema específico, o mago terá informações e visões sobre o problema. Um personagem não consegue descobrir o endereço, mas consegue ter visões de um prédio, ou que ela mora perto de um rio. <i>O narrador pode pedir um teste de Percepção + Sonhos (dificuldade 6) para derterminar a extensão da informação</i></li>
+                </ul>
+                <li>
+                    <span>Talismãs:</span>
+                    <button onclick="decrement('Vants', 'talismas')">-</button>
+                    <span id="talismas">0</span>
+                    <button onclick="increment('Vantas', 'talismas')">+</button>
+                </li>
+                <ul>
+                    <li>Esse antecedente representa objetos como Talismãs e Instrumentos da Tecnocracia, que têm poderes e produzem Efeitos Mágicos. Embora sejam raros, alguns magos de sorte carregam obketos que possuem seus próprios poderes: lendas dizem que os Mestres são capazes de manufaturar esses objetos. Ao criar uma maravilha, você deve determinar a função dos Efeitos e a Esfera que os representa, e você deve determinar com seu narrador o que acontecerá exatamente toda  vez que o objeto for acionado.
+                    O Efeito é limitado a um nível de Esfera igual ao nível deste antecedente.
+                    Uma Maravilha pode ter um nível de Arete, tendo as próprias paradas de dados.
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="assets/js/char_create.js"></script>
+</body>
+</html>

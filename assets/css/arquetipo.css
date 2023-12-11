@@ -1,0 +1,102 @@
+.nav_center {
+    border: green ;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    border: 4px solid #0b1f46;
+
+}
+
+.content_row {
+    border: pink;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.content_collumn {
+    border: pink;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.searchbar {
+    border: brown;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.info {
+    width: 100%;
+    border: blue ;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* collapsible start */
+.content {
+    display: none;
+    padding: 10px;
+    width: 340px;
+}
+
+.card {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 340px;
+    
+}
+
+.collapsible {
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.collapsible h2 {
+    font-size: large;
+    font-weight: 100px;
+
+}
+
+.active {
+    display: block;
+}
+
+.searchbar input {
+    width: 340px;
+    height: 35px;
+    color: #ffffff;
+    background-color: rgba(11, 20, 45, .7);
+    border: solid #0b1f46;;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.shown {
+    display: flex;
+}
+
+.content {
+    display: none;
+}

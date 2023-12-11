@@ -1,0 +1,95 @@
+/* collapsible start */
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 25vw;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.collapsible {
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.collapsible_base {
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+    width: 340px;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+}
+
+
+p a {
+    color: purple;
+    font-weight: 600;
+}
+
+.tradition_top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border:  tomato;
+}
+
+.tradition_bottom p{
+    text-align: center;
+}
+
+.tradition_bottom {
+    border: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    max-height: 90%;
+}
+
+
+/* tolltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+  /* Dica */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 125px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
