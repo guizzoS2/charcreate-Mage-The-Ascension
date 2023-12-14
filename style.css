@@ -173,8 +173,12 @@ p a {
 
 .essence_description {
     display: none;
-    padding: 10px;
-    width: 50%;
+    width: 60%;
+}
+
+.button_display {
+    display: flex;
+    flex-direction: row;
 }
 
 .show {
@@ -354,5 +358,19 @@ p a {
         width: 100%;
         display: flex;
         padding: 20px;
+    }
+
+    .essence_description {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content_row {
+        flex-wrap: wrap;
+    }
+
+    .essence_name {
+        width: calc(50% - 10px); /* Each item takes up half the row width minus margin */
+        margin: 5px; /* Maintain margin */
     }
 }
