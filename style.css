@@ -15,6 +15,14 @@
     src: url(../img/fonts/BERGELL.TTF)
 }
 
+body {
+    background: linear-gradient(to bottom, rgba(85, 0, 255, 0.79), rgba(92, 0, 128, 0.751));
+    color: white;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 :root {
     --cor-primaria: #1B1A17;
     --cor-secundaria: #B4B4B3;
@@ -117,12 +125,9 @@ p a {
     visibility: visible;
 }
 
-
-
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
-
 
 /* essence general */
 .essence_top {
@@ -134,7 +139,7 @@ p a {
 }
 
 .marked {
-    background-color: #a19c9c;
+    background-color: #D0D0D7;
 }
 
 .essence_top p{
@@ -184,8 +189,6 @@ p a {
 .show {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    
 }
 
 
@@ -201,58 +204,67 @@ p a {
 .arquetipo_top p{
     text-align: center;
 }
+
 .arquetipo_bottom {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    padding: 10px;
 }
 
 .content {
     display: none;
-    border: 1px solid #ddd;
     padding: 10px;
-    outline: none;
-    font-size: 15px;
-    box-sizing: border-box;
+    width: 500px;
+    
+}
+
+.content_area {
+    border: purple ;
+    display: flex;
+    text-align: center;
+    border-radius: 20px;
+    height: 40vh;
 }
 
 .nav_center {
-    width: 20%;
-    height: 70%;
     display: flex;
-    flex-direction: column;;
+    flex-direction: row;
     text-align: center;
-    overflow: auto;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    border: 2px solid #686565;
-
+    height: 40vh;
 }
 
 .searchbar {
     border: brown;
     margin: 10px;
-    display: flex;
-    justify-content: center;
+}
 
+.search_column {
+    display: flex;
+    flex-direction: column;
+    border: green;
 }
 
 .searchbar input {
     width: 340px;
     height: 35px;
     color: #000000;
-    border: solid #a5a6a9;;
     border-radius: 5px;
     text-align: center;
 }
 
+.searchbar input:focus {
+    outline: none;
+}
+
 .collapsible {
-    width: 90%;
     cursor: pointer;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin: 5px;
+    width: 300px;
 }
 
 .collapsible h2 {
@@ -265,14 +277,15 @@ p a {
     flex-direction: column;
 }
 
-.content_area {
-    border: purple ;
-    padding: 10px;
-    width: 20%;
-    display: flex;
-    justify-content: center; 
-    text-align: center;
-}
+
+.arquetipo_options {
+    border: red;
+    overflow: auto;
+    direction: rtl;
+    width: 700px;
+    padding-bottom: 20px;
+    }
+
 
 /* atributos */
 .atributos_top {
@@ -373,4 +386,36 @@ p a {
         width: calc(50% - 10px); /* Each item takes up half the row width minus margin */
         margin: 5px; /* Maintain margin */
     }
+
+    /* .nav_center {
+        flex-direction: column;
+        height: 450px;
+    }
+    
+    .arquetipo_options {
+        height: 200px;
+        flex-wrap: wrap;
+    }
+
+    .arquetipo_bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: initial;
+        height: 500px;
+        justify-content: center;
+    }
+    
+    .content_area {
+        display: flex;
+        justify-content: center;
+    }
+
+    .collapsible {
+        margin: 5px;
+        width: 200px;
+    }
+
+    .content_column{
+        width: 100px;
+    } */
 }
