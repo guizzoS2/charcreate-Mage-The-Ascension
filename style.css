@@ -77,6 +77,10 @@ p a {
     border: green;
 }
 
+.descricao_geral {
+    width: 60%;
+}
+
 .tradition_bottom p{
     text-align: center;
 }
@@ -90,7 +94,7 @@ p a {
     max-height: 90%;
 }
 
-/* tradition tolltip */
+/* tradition tooltip */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -98,16 +102,22 @@ p a {
 }
 
 .tooltip .tooltiptext {
-visibility: hidden;
-width: 125px;
-background-color: black;
-color: #fff;
-text-align: center;
-border-radius: 6px;
-padding: 5px 0;
-position: fixed;
-z-index: 1;
+    visibility: hidden;
+    width: 125px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
 }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -196,8 +206,11 @@ z-index: 1;
 
 .content {
     display: none;
+    border: 1px solid #ddd;
     padding: 10px;
-    width: 340px;
+    outline: none;
+    font-size: 15px;
+    box-sizing: border-box;
 }
 
 .nav_center {
@@ -257,8 +270,8 @@ z-index: 1;
     text-align: center;
 }
 
-/* habilidade */
-.habilidade_top {
+/* atributos */
+.atributos_top {
     display: flex;
     text-align: center;
     align-items: center;
@@ -266,7 +279,7 @@ z-index: 1;
     border: green;
 }
 
-.habilidade_bottom {
+.atributos_bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -277,18 +290,10 @@ z-index: 1;
     flex-direction: column;
 }
 
-.habilidades {
-    display: flex;
-    flex-direction: column;
-}
-
-.attribute {
+/* .attribute {
     display: flex;
     justify-content: end;
-
-}
-
-
+} */
 
 /* vantagens */
 .vantagem_top {
@@ -301,10 +306,8 @@ z-index: 1;
 
 .vantagem_bottom {
     display: flex; 
-   
     align-items: center;
     justify-content: center;
-   
 }
 
 .vantagem_list {
@@ -312,3 +315,44 @@ z-index: 1;
     border: red;
 }
 
+/* habilidades */
+.habilidades_top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.habilidades_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+/* iPhone 13 Media Query */
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 90%; /* Adjust width for iPhone screen */
+        margin: 10px auto;
+    }
+
+    .collapsible_base {
+        width: 100%; /* Adjust width for iPhone screen */
+        font-size: 14px; /* Adjust font size for readability */
+        
+    }
+
+    .tradition_top, .tradition_bottom {
+        flex-direction: column; /* Adjust layout for smaller screen */
+    }
+
+    .content_column {
+        width: 100%; /* Adjust column width */
+    }
+
+    .descricao_geral {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listas_atributos {
+    display: flex;
+    flex-direction: row;
+}
+
+.listas_atributos div h3 {
+    text-align: center;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+}
+
+.habilidades div h3{
+    text-align: center;
+}
+
+.resumo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
