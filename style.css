@@ -216,15 +216,15 @@ p a {
     display: none;
     padding: 10px;
     width: 500px;
+    border: blue;
     
 }
 
 .content_area {
-    border: purple ;
+    border: solid yellow;
     display: flex;
     text-align: center;
     border-radius: 20px;
-    height: 40vh;
 }
 
 .nav_center {
@@ -234,17 +234,18 @@ p a {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     height: 40vh;
+    border:  orangered;
 }
 
 .searchbar {
-    border: brown;
+    border:  brown;
     margin: 10px;
 }
 
 .search_column {
     display: flex;
     flex-direction: column;
-    border: green;
+    border:  green;
 }
 
 .searchbar input {
@@ -349,14 +350,29 @@ p a {
 /* iPhone 13 Media Query */
 @media only screen and (max-width: 480px) {
     .card {
-        width: 90%; /* Adjust width for iPhone screen */
-        margin: 10px auto;
+        width: 90%;
     }
 
+    .hidden {
+        display: none;
+    }
+    
     .collapsible_base {
         width: 100%; /* Adjust width for iPhone screen */
         font-size: 14px; /* Adjust font size for readability */
-        
+    }
+
+    .collapsible {
+        width: 70%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        width: 95%;
+        justify-content: center;
     }
 
     .tradition_top, .tradition_bottom {
@@ -368,9 +384,9 @@ p a {
     }
 
     .descricao_geral {
-        width: 100%;
+        width: 90vw;
         display: flex;
-        padding: 20px;
+        justify-content: center;
     }
 
     .essence_description {
@@ -385,6 +401,27 @@ p a {
     .essence_name {
         width: calc(50% - 10px); /* Each item takes up half the row width minus margin */
         margin: 5px; /* Maintain margin */
+    }
+
+    .nav_center {
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+        height: 400px;
+        margin-bottom: 150px;
+    }
+
+    .arquetipo_options {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #searchInput {
+        width: 70%;
     }
 
     /* .nav_center {

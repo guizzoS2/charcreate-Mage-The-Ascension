@@ -3,10 +3,10 @@ coll.forEach(item => {
     item.addEventListener('click', function() {
         this.classList.toggle('active');
         const content = this.nextElementSibling;
-        if (content.style.display === 'block') {
+        if (content.style.display === 'flex') {
             content.style.display = 'none';
         } else {
-            content.style.display = 'block';
+            content.style.display = 'flex';
         }
     });
 });
@@ -15,7 +15,7 @@ function filterCards() {
     var input, filter, cards, cardTitle, i;
     input = document.getElementById("searchInput");
     filter = input.value.toUpperCase();
-    cards = document.getElementsByClassName("card");
+    cards = document.getElementsByClassName("collapsible");
 
     for (i = 0; i < cards.length; i++) {
         cardTitle = cards[i].getElementsByTagName("h2")[0];
