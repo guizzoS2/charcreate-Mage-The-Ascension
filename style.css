@@ -221,7 +221,7 @@ p a {
 }
 
 .content_area {
-    border: solid yellow;
+    border: yellow;
     display: flex;
     text-align: center;
     border-radius: 20px;
