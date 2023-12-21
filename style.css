@@ -442,6 +442,14 @@ p a {
         max-width: 90%;
     }
 
+    .vantagem_list ul li {
+        margin-top: 30px;
+    }
+
+    .vantagem_list ul ul li {
+        margin-top: initial;
+    }
+
     /* .nav_center {
         flex-direction: column;
         height: 450px;
