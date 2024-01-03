@@ -25,5 +25,12 @@ body {
 .resumo {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    width: 40vw;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.resumo_col {
+    display: flex;
+    flex-direction: column;
 }

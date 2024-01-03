@@ -1,7 +1,5 @@
 // Recupere os valores salvos do localStorage
 const savedAttributes = JSON.parse(localStorage.getItem('attributes'));
-const savedInfos = JSON.parse(localStorage.getItem('infos'));
-
 // Elementos onde você deseja exibir os valores recuperados
 for (let category in savedAttributes) {
     for (let attribute in savedAttributes[category]) {
@@ -20,13 +18,7 @@ for (let category in savedAttributes) {
     for (let attribute in savedAttributes[category]) {
         const element = document.getElementById(attribute);
         if (element) {
-            element.textContent = JSON.stringify(savedAttributes[category][attribute]);
+            element.textContent = savedAttributes[category][attribute];
         }
     }
 }
-
-
-
-
-
-// FAZNEOD O MESMO, SO QUE PARA saveddINFOS

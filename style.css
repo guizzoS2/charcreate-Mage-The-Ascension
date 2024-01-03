@@ -232,7 +232,9 @@ p a {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+    padding: 10px;
     height: 40vh;
+    width: 90%;
     border:  orangered;
 }
 
@@ -347,6 +349,43 @@ p a {
     justify-content: space-around
 }
 
+
+/* social */
+.social_top {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.column_social {
+    display: flex;
+    flex-direction: column;
+}
+
+.column_social input {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 15px;
+}
+
+.column_social label {
+    text-align: start;
+    padding-left: 10px;
+}
+
+
 /* iPhone 13 Media Query */
 @media only screen and (max-width: 480px) {
     .card {
@@ -372,7 +411,6 @@ p a {
 
     .content {
         width: 95%;
-        justify-content: center;
     }
 
     .tradition_top, .tradition_bottom {
@@ -407,13 +445,12 @@ p a {
         flex-direction: column;
         width: 90vw;
         align-items: center;
-        height: 400px;
-        margin-bottom: 150px;
+        height: auto;
     }
 
     .arquetipo_options {
         width: 400px;
-        height: 300px;
+        max-height: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;

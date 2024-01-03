@@ -204,6 +204,13 @@ let attributes = {
     essencia: "",
     arquetipo: "",
     },
+
+    data: {
+    nome: "",
+    cabala: "",
+    cronica: "",
+    jogador: "",
+    },
 };
 
 function updateDisplay() {
@@ -346,27 +353,48 @@ function resetValues(category) {
 updateDisplay();
 
 
-const traditionSelect = document.getElementById('tradition');
-const essenceSelect = document.getElementById('essence');
-const arquetipoSelect = document.getElementById('arquetipo');
+// const traditionSelect = document.getElementById('tradition');
+// const essenceSelect = document.getElementById('essence');
+// const arquetipoSelect = document.getElementById('arquetipo');
 
-traditionSelect.addEventListener('change', function () {
+// traditionSelect.addEventListener('change', function () {
+//     attributes.infos.tradicao = traditionSelect.value;
+//     console.log(infos);
+// });
+
+// essenceSelect.addEventListener('change', function () {
+//     attributes.infos.essencia = essenceSelect.value;
+//     console.log(infos);
+// });
+
+// arquetipoSelect.addEventListener('change', function () {
+//     attributes.infos.arquetipo = arquetipoSelect.value;
+//     console.log(infos);
+// });
+
+
+function saveAtributes() {
+    var dataNome = document.getElementById('nome');
+    var dataJogador = document.getElementById('jogador');
+    var dataCronica = document.getElementById('cronica');
+    var dataCabala = document.getElementById('cabala');
+
+    attributes.data.nome = dataNome.value;
+    attributes.data.jogador = dataJogador.value;
+    attributes.data.cronica = dataCronica.value;
+    attributes.data.cabala = dataCabala.value;
+
+    const traditionSelect = document.getElementById('tradition');
+    const essenceSelect = document.getElementById('essence');
+    const arquetipoSelect = document.getElementById('arquetipo');
     attributes.infos.tradicao = traditionSelect.value;
-    console.log(infos);
-});
-
-essenceSelect.addEventListener('change', function () {
     attributes.infos.essencia = essenceSelect.value;
-    console.log(infos);
-});
-
-arquetipoSelect.addEventListener('change', function () {
     attributes.infos.arquetipo = arquetipoSelect.value;
-    console.log(infos);
-});
+}
+
 
 // localStorage
 function save(){
+    saveAtributes()
     localStorage.setItem('attributes', JSON.stringify(attributes));
-    localStorage.setItem('infos', JSON.stringify(infos));
 }
